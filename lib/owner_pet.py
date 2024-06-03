@@ -27,7 +27,6 @@ class Pet:
         if not (isinstance(owner, Owner) or not owner):
             raise Exception("Object is not of type Owner")
         self._owner = owner
-    # pass
 
 class Owner:
     def __init__(self, name):
@@ -43,4 +42,3 @@ class Owner:
 
     def get_sorted_pets(self):
         return sorted(self.pets(), key=lambda pet: pet.name)
-    # pass
